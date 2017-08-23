@@ -1,58 +1,50 @@
 const expect = chai.expect;
 
-describe('index.js', () => {
-  describe('currentUser', () => {
-    it('is defined', () => {
-      expect(currentUser, "The 'currentUser' variable must contain a string").to.be.a('string');
-      expect(currentUser, "You need to modify the value of the 'currentUser' variable").to.not.be.empty;
-    });
-  });
+describe('boardMembers', function() {
+  let polishedBoardMember;
+  before(() => {
+    polishedBoardMember = new BoardMember("Mr. Polished", "New York", "law")
+  })
 
-  describe('welcomeMessage', () => {
-    it('contains "Welcome to Flatbook, "', () => {
-      expect(welcomeMessage).to.have.string('Welcome to Flatbook, ');
-    });
+  describe('boardMember Constructor Function', function() {
+    it('can create a BoardMember with a name, home state, and training', function() {
+      expect(polishedBoardMember).to.be.an.instanceof(BoardMember)
+      expect(polishedBoardMember.name).to.equal("Mr. Polished")
+      expect(polishedBoardMember.homeState).to.equal("New York")
+      expect(polishedBoardMember.training).to.equal("law")
+    })
+  })
 
-    it("contains the value of the 'currentUser' variable", () => {
-      expect(welcomeMessage).to.have.string(currentUser);
-    });
+  describe('veto()', function() {
+    it('returns "No, I must disagree"', function() {
+      expect(polishedBoardMember.veto()).to.equal("No, I must disagree")
+    })
+  })
 
-    it('ends with an exclamation point!', () => {
-      expect(welcomeMessage.substr(-1)).to.eq('!');
-    });
-  });
+  describe('approve()', function() {
+    it('returns "You can do that!"', function() {
+      expect(polishedBoardMember.approve()).to.equal("You can do that!")
+    })
+  })
 
-  describe('excitedWelcomeMessage', () => {
-    it('contains "WELCOME TO FLATBOOK, "', () => {
-      expect(excitedWelcomeMessage).to.have.string('WELCOME TO FLATBOOK, ');
-    });
+  describe('doCharity()', function() {
+    it('returns "I like to help people."', function() {
+      expect(polishedBoardMember.doCharity()).to.equal("I like to help people.")
+    })
+  })
 
-    it("contains the value of the 'currentUser' variable", () => {
-      const upperCaseCurrentUser = currentUser.toUpperCase();
+  describe('releasePressStatement()', function() {
+    it('returns "You will see great things from Scuber."', function() {
+      expect(polishedBoardMember.releasePressStatement()).to.equal("You will see great things from Scuber.")
+    })
+  })
 
-      expect(excitedWelcomeMessage).to.have.string(upperCaseCurrentUser);
-    });
+  describe('sayHi()', function() {
+    it('returns "Hi, my name is <name>. I am from <homestate>, and I was trained in <training>."', function() {
+      expect(polishedBoardMember.sayHi()).to.equal("Hi, my name is Mr. Polished. I am from New York, and I was trained in law.")
+    })
+  })
+})
 
-    it('ends with an exclamation point', () => {
-      expect(excitedWelcomeMessage.substr(-1)).to.eq('!');
-    });
-  });
 
-  describe('shortGreeting', () => {
-    it(`contains "Welcome, "`, () => {
-      expect(shortGreeting).to.have.string('Welcome, ');
-    });
-
-    it("contains the first initial of the name stored in the 'currentUser' variable", () => {
-      const firstInitial = currentUser[0];
-      const restOfName = currentUser.slice(1);
-
-      expect(shortGreeting).to.have.string(firstInitial);
-      expect(shortGreeting).to.not.have.string(restOfName);
-    });
-
-    it('ends with an exclamation point', () => {
-      expect(shortGreeting.substr(-1)).to.eq('!');
-    });
-  });
-});
+// mocha.suite.suites[0].suites[0].tests[0]
