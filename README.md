@@ -8,7 +8,7 @@
 ## Instructions
 Scuber, in an effort to gain much needed local influence, has begun adding some powerful board members to its organization.  It expects to add more (similar) board members in the future, so it needs you to declare a constructor function so that it can crank them out.
 
-In `index.js`, write a constructor function called `BoardMember` that sets the following properties: `name`, `training`, and `homeState`.
+In `index.js`, write a constructor function called `BoardMember` that sets the following properties: `name`, `homeState`, and `training`.
 
 Add following methods to the class:
 + `veto` — returns `No, I must disagree`
