@@ -1,25 +1,26 @@
 {
-  "name": "javascript-strings-lab",
+  "name": "js-object-oriented-object-methods-lab",
   "version": "0.2.0",
-  "description": "JavaScript Strings Code-along for Learn.co",
+  "description": "JavaScript Object Oriented Methods Lab for Learn.co",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/learn-co-curriculum/javascript-strings-lab.git"
+    "url": "git+ssh://git@github.com/learn-co-curriculum/js-object-oriented-object-methods-lab.git"
   },
   "keywords": [
     "learn",
     "flatiron school",
     "javascript",
-    "strings",
-    "code-along"
+    "object oriented",
+    "methods",
+    "lab"
   ],
   "author": "@gj",
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/learn-co-curriculum/javascript-strings-lab/issues"
+    "url": "https://github.com/learn-co-curriculum/js-object-oriented-object-methods-lab/issues"
   },
-  "homepage": "https://github.com/learn-co-curriculum/javascript-strings-lab#readme",
+  "homepage": "https://github.com/learn-co-curriculum/js-object-oriented-object-methods-lab#readme",
   "devDependencies": {
     "learn-browser": "^0.1.6"
   }
