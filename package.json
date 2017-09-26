@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/learn-co-curriculum/js-object-oriented-object-methods-lab#readme",
   "devDependencies": {
-    "learn-browser": "^0.1.6"
+    "learn-browser": "^0.1.13"
   }
 }
