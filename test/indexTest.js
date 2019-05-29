@@ -1,5 +1,3 @@
-const expect = chai.expect;
-
 describe('boardMembers', function() {
 
 
