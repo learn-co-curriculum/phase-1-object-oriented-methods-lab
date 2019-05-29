@@ -8,8 +8,7 @@
     "test": "node_modules/browser-sync/bin/browser-sync.js start --config node_modules/learn-browser/bs-config.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/learn-co-curriculum/js-object-oriented-object-methods-lab.git"
+    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
   },
   "keywords": [
     "learn",
@@ -25,7 +24,15 @@
     "url": "https://github.com/learn-co-curriculum/js-object-oriented-object-methods-lab/issues"
   },
   "homepage": "https://github.com/learn-co-curriculum/js-object-oriented-object-methods-lab#readme",
-  "devDependencies": {
-    "learn-browser": "^0.1.13"
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "chai": "^4.2.0",
+    "file-system": "^2.2.2",
+    "jsdom": "^9.0",
+    "mocha": "^5.2.0",
+    "mocha-jsdom": "~1.1.0",
+    "mocha-multi": "^1.0.1",
+    "sinon": "^7.3.2"
   }
 }
