@@ -4,8 +4,7 @@
   "description": "JavaScript Object Oriented Methods Lab for Learn.co",
   "main": "index.js",
   "scripts": {
-    "postinstall": "gem install learn-co",
-    "test": "node_modules/browser-sync/bin/browser-sync.js start --config node_modules/learn-browser/bs-config.js"
+    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
   },
   "repository": {
     "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
