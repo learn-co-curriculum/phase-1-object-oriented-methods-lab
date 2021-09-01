@@ -1,9 +1,10 @@
 # Object Methods in JS Lab
 
-## Objectives
-* Create constructor functions
-* Add methods to a constructor function
-* Create objects from a constructor function
+## Learning Goals
+
+- Create constructor functions
+- Add methods to a constructor function
+- Create objects from a constructor function
 
 ## Instructions
 
@@ -12,12 +13,9 @@ Scuber, in an effort to gain much needed local influence, has begun adding some 
 In `index.js`, write a constructor function called `BoardMember` that sets the following properties: `name`, `homeState`, and `training`.
 
 Add following methods to the class:
+
 - `veto` — returns `No, I must disagree`
-
 - `approve` — returns `You can do that!`
-
 - `doCharity` — returns `I like to help people.`
-
 - `releasePressStatement` — returns `You will see great things from Scuber.`
-
 - `sayHi` — returns `"Hi, my name is <name>. I am from <homestate>, and I was trained in <training>.`
