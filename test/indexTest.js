@@ -1,3 +1,5 @@
+require ( './helpers.js' );
+
 describe('boardMembers', function() {
 
 
@@ -64,4 +66,3 @@ describe('boardMembers', function() {
     })
   })
 })
-
